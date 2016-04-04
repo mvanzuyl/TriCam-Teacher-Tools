@@ -1,0 +1,80 @@
+td{
+    text-align: center;
+}
+
+
+
+.container { position:relative; padding:0 0 0 0; }
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px; 
+    width: 85%;
+    height: 100%;
+    margin: 0 0 5px 0
+}
+
+.point-top,
+.point-bottom {
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+}
+
+.point-top {
+  border-bottom: 50px solid rgb(177, 99, 163);
+  border-top: 0; 
+}
+
+.triangles-menu {
+  background-color: rgb(177, 99, 163);
+  width: 150px;
+  padding-bottom: 1em;
+}
+
+.triangles-menu a {
+  display: block;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: .5em;
+}
+
+.triangles-menu a:first-of-type { 
+  padding-top: 1em;
+  text-decoration: underline;
+}
+
+.triangles-menu a:hover {
+  text-decoration: underline;
+}
+
+.point-bottom {
+  border-top: 50px solid rgb(177, 99, 163);
+  border-bottom: 0;
+}
+
+.rotate {
+    float left
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
