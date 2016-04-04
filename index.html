@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- To do:
+1. Create spreadsheet from database (api)- when click "gradebook"
+2. add 6-ish carasoule pictures to home page- next to nav bar or in green box
+3. add a log-in screen
+4. add page to store assignment pictures or have it linked from the spreadsheet- each student's corrected hw
+
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- css/bootstrap.min.css --><!-- 
+    <link href="assets/css/styles.css" rel="stylesheet" /> -->
+
+    <link href="style.css" rel="stylesheet" media="screen">
+  </head>
+	
+
+  <body style="background-color:lightblue">
+    <center><h1 style = "letter-spacing: 1px"> <font face = "verdana" color = "white"> TRiCAM Teacher Tools </h1></center>
+    	<center><p style = "letter-spacing: 1px"> <font face = "verdana" color = "white"> Streamlined grading for teachers. Immediate feedback for students.  </p>
+ 	 <div class="point-top"></div>
+
+	<div class="triangles-menu">
+  		<a href="index.html">Home</a>
+		<a href="gradebook.html">Gradebook</a>
+
+	</div>
+
+ 	<div class="point-bottom"></div> 
+
+    <div class="container">
+
+    	<!--<div id="sidebar"></div>-->
+ 
+    	<div id="rcorners1">
+<section class="loginform cf">
+<form name="login" action="index_submit" method="get" accept-charset="utf-8">
+	<ul>
+		<label for "usermail">Email</label>
+		<input type="email" name="usermail" placeholder="johnsmith@gmail.com"required>
+		<label for "password"> Password</label>
+		<input type = "password" name="password" placeholder="password" required>
+		<a href = "gradebook.html"><input type= "input_submit" value="Login" id = "submitbutton"></a>
+	</ul>
+	<p style = "letter-spacing: 1px"> Hello! Please login to access your class gradebook. <p>
+</form>
+
+<h1>
+<img src="C:\Users\Thomas Scanlan\Desktop\1.png"
+  alt= "Student with homework"
+  style = "width: 25%; height: 25%;"><img src= "C:\Users\Thomas Scanlan\Desktop\2.png"
+  alt= "Student sends text of homework to teacher"
+  style = "width: 25%; height: 25%;"><img src= "C:\Users\Thomas Scanlan\Desktop\3.png"
+  alt= "Automatically grades homework"
+  style = "width: 25%; height: 25%;"><img src= "C:\Users\Thomas Scanlan\Desktop\4.png"
+  alt= "Student corrects homework"
+  style = "width: 25%; height: 25%;"><figcaption style = "letter-spacing: 1px"><font size = 2> 1. Student completes homework ---> 2. Student sends image of homework to teacher ---> 3. Homework is automatically corrected and sent to gradebook ---> 4. Student corrects wrong answers </figcaption>
+</section>
+
+	</div>
+		
+    
+    	</div> 
+    	
+   
+
+    <form action="http:">">
+    <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+    </form>
+
+    <button type = "submit" id = "submitbtn">Submit</button>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>   
+    <script>
+    console.log(" running");
+    $("#submitbtn").click(function(){
+       alert( "Succesful" );
+    });
+     </script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
